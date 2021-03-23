@@ -1,0 +1,9 @@
+$primary: #20A4F3;
+$secondary: #EEFC57;
+$light: #AEECEF;
+$dark: #284567;
+$success: #CCFF66;
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+@import "~vue-wysiwyg/dist/vueWysiwyg.css";
