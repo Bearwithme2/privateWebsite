@@ -13,8 +13,10 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "emailjs-com": "^2.6.4",
+    "swiper": "^6.5.6",
     "vue": "^2.6.11",
     "vue-fullpage.js": "^0.1.7",
+    "vue-responsive-components": "^0.2.3",
     "vue-router": "^3.2.0",
     "vue-wysiwyg": "^1.7.2",
     "vuex": "^3.4.0"

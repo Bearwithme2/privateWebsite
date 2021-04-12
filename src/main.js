@@ -9,7 +9,10 @@ import wysiwyg from "vue-wysiwyg";
 import "./assets/variables.scss";
 import "./assets/general.scss";
 import VueFullPage from "vue-fullpage.js";
+import { VueResponsiveComponents } from "vue-responsive-components";
+import "fullpage.js/vendors/scrolloverflow";
 
+Vue.use(VueResponsiveComponents);
 Vue.use(VueFullPage);
 Vue.config.productionTip = false;
 

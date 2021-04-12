@@ -45,14 +45,14 @@ li:last-child {
 
 li::before {
   position: absolute;
-  left: -15px;
-  top: -5px;
+  left: -18%;
+  top: -2%;
   content: " ";
   border: 8px solid #ccff66;
   border-radius: 500%;
   background: #20a4f3;
-  height: 30px;
-  width: 30px;
+  height: 2.5em;
+  width: 2.5em;
   transition: all 500ms ease-in-out;
 }
 

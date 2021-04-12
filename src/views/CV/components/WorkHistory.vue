@@ -8,7 +8,7 @@
         <hr />
       </b-col>
     </b-row>
-    <b-row>
+    <b-row class="text-center">
       <b-col>
         <timeline />
       </b-col>
@@ -18,6 +18,7 @@
 
 <script>
 import Timeline from "@/components/Timeline/Timeline";
+
 export default {
   name: "WorkHistory",
   components: { Timeline }

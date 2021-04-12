@@ -1,6 +1,10 @@
 <template>
-  <div class="screen">
-    <div class="timeline-container">
+  <Responsive
+    :breakpoints="{
+      small: el => el.width <= 700
+    }"
+  >
+    <div slot-scope="el" v-if="!el.is.small">
       <ul>
         <timeline-item
           v-for="(item, key) in cvItems"
@@ -11,15 +15,26 @@
         />
       </ul>
     </div>
-  </div>
+    <div v-else class="accordion" role="tablist">
+      <mobile-timeline-item
+        v-for="(item, key) in cvItems"
+        :key="key"
+        :id="key"
+        :time="item.time"
+        :title="item.title"
+        :description="item.description"
+      />
+    </div>
+  </Responsive>
 </template>
 
 <script>
 import TimelineItem from "@/components/Timeline/TimelineItem";
+import MobileTimelineItem from "@/components/Timeline/MobileTimelineItem";
 
 export default {
   name: "Timeline",
-  components: { TimelineItem },
+  components: { MobileTimelineItem, TimelineItem },
   data() {
     return {
       cvItems: [
@@ -64,13 +79,6 @@ export default {
 </script>
 
 <style scoped>
-.timeline-container {
-  width: 20%;
-  margin: auto;
-  display: block;
-  position: relative;
-}
-
 ul {
   margin: 2em 0;
   padding: 0;

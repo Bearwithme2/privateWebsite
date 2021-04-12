@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container class="vh-100" fluid>
+    <b-container class="" fluid>
       <b-row class="justify-content-center vh-100" align-v="center">
         <b-col>
           <b-row class="justify-content-center">
@@ -12,14 +12,18 @@
             </b-col>
           </b-row>
           <b-row class="justify-content-center mt-5">
-            <b-col cols="5">
+            <b-col lg="5">
               <contact-mail />
             </b-col>
           </b-row>
         </b-col>
       </b-row>
+      <b-row>
+        <b-col class="p-0">
+          <c-v-footer />
+        </b-col>
+      </b-row>
     </b-container>
-    <c-v-footer />
   </div>
 </template>
 

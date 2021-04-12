@@ -1,6 +1,6 @@
 <template>
   <b-container class="screen" fluid>
-    <b-row class="vh-100 justify-content-center" align-v="center" cols="3">
+    <b-row class="vh-100 justify-content-center" align-v="center" cols-lg="3">
       <b-col class="text-center">
         <b-row>
           <b-col>

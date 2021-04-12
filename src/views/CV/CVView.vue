@@ -27,6 +27,7 @@ export default {
   data() {
     return {
       options: {
+        scrollOverflow: true,
         anchors: ["header", "about", "work-history", "contact"],
         sectionsColor: ["#284567", "#ffffff", "#284567", "#ffffff"]
       }

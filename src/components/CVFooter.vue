@@ -2,7 +2,7 @@
   <footer>
     <b-container class="pb-2 pt-2 text-white" fluid>
       <b-row>
-        <b-col></b-col>
+        <b-col sm="0" lg="3"></b-col>
         <b-col>
           <b-row>
             <b-col class="text-center">
@@ -10,17 +10,17 @@
               <hr />
             </b-col>
           </b-row>
-          <b-row class="justify-content-start" cols="3">
-            <b-col class="text-right">E-mail:</b-col>
-            <b-col>jakubtrtik2@gmail.com</b-col>
+          <b-row class="justify-content-lg-start" cols-lg="3">
+            <b-col sm="3" lg="6" class="text-lg-right">E-mail:</b-col>
+            <b-col sm="6" lg="6">jakubtrtik2@gmail.com</b-col>
           </b-row>
-          <b-row class="justify-content-start" cols="3">
-            <b-col class="text-right">Telefon:</b-col>
-            <b-col>+420 728313469</b-col>
+          <b-row class="justify-content-lg-start" cols-lg="3">
+            <b-col sm="3" lg="6" class="text-lg-right">Telefon:</b-col>
+            <b-col sm="6" lg="6">+420 728 313 469</b-col>
           </b-row>
-          <b-row class="justify-content-start" cols="3">
-            <b-col class="text-right">Bydliště:</b-col>
-            <b-col>Brno-město, Brno</b-col>
+          <b-row class="justify-content-lg-start" cols-lg="3">
+            <b-col sm="3" lg="6" class="text-lg-right">Bydliště:</b-col>
+            <b-col sm="6" lg="6">Brno-město, Brno</b-col>
           </b-row>
         </b-col>
         <b-col class="text-center">
@@ -55,7 +55,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col class="mt-2 pt-2 strip small-text text-center">
+        <b-col class="mt-1 strip small-text text-center">
           <i>© website by Jakub Trtík {{ currentYear }}</i>
         </b-col>
       </b-row>
@@ -78,20 +78,15 @@ export default {
 footer {
   font-size: 12px;
   width: 100%;
-  height: 12em;
-  bottom: 0;
-  position: fixed;
+  height: 7.4rem;
+  /*bottom: 0;*/
+  /*position: fixed;*/
   background-color: #284567;
 }
 
 .strip {
   background-color: #233c58;
   width: 100%;
-  height: 3em;
-}
-
-.small-text {
-  font-size: 14px;
 }
 
 hr {
