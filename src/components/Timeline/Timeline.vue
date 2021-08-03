@@ -39,7 +39,7 @@ export default {
     return {
       cvItems: [
         {
-          time: "03 2020 - Current time",
+          time: "03 2020 - Nyní",
           title: "Kontraktor PHP dev",
           description: "Vývoj aplikací pro zákazníky třetí strany."
         },

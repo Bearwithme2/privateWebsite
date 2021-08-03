@@ -1,9 +1,19 @@
 <template>
-  <div>
-    <b-container class="" fluid>
-      <b-row class="justify-content-center vh-100" align-v="center">
+  <Responsive
+    :breakpoints="{
+      small: el => el.width <= 700
+    }"
+  >
+    <b-container slot-scope="el" class="vh-100" fluid>
+      <b-row
+        :class="{
+          'justify-content-center': el.is.small,
+          'justify-content-center vh-85': !el.is.small
+        }"
+        align-v="center"
+      >
         <b-col>
-          <b-row class="justify-content-center">
+          <b-row class="justify-content-center mt-3">
             <b-col cols="0">
               <h1>
                 KONTAKT
@@ -18,13 +28,13 @@
           </b-row>
         </b-col>
       </b-row>
-      <b-row>
+      <b-row style="margin-top: 5.2rem">
         <b-col class="p-0">
           <c-v-footer />
         </b-col>
       </b-row>
     </b-container>
-  </div>
+  </Responsive>
 </template>
 
 <script>
